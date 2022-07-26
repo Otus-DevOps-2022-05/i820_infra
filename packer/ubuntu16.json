@@ -12,7 +12,6 @@
             "use_ipv4_nat": true,
             "instance_mem_gb": "{{user `y_memory`}}",
             "instance_cores": "{{user `y_cores`}}",
-            "skip_create_image": "{{user `y_skip`}}",
             "zone": "{{user `y_zone`}}"
         }
     ],
