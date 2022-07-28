@@ -18,3 +18,5 @@ someinternalhost_IP = 10.128.0.25
 
 testapp_IP = 51.250.94.213
 testapp_port = 9292
+
+Создан шаблон для Packer, переменные вынесены в variables.json
