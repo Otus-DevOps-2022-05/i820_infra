@@ -47,4 +47,3 @@ resource "yandex_compute_instance" "app" {
     script = "files/deploy.sh"
   }
 }
-
