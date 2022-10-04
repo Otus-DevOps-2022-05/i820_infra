@@ -1,0 +1,8 @@
+cloud_id                 = "b1ge6in46fa5bdle3rfo"
+folder_id                = "b1gjasic7gm819mp7atc"
+zone                     = "ru-central1-a"
+image_id                 = "fd8bqfbv3w9sg3qu2fkc"
+public_key_path          = "/files/id_rsa.pub"
+subnet_id                = "e9ep09jc9pbmdothf6s6"
+service_account_key_file = "/files/key.json"
+private_key_path         = "/files/id_rsa"
