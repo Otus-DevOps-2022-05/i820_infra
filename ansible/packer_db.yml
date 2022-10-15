@@ -1,0 +1,22 @@
+- name: Install db
+  become: yes
+  hosts: all
+  tasks:
+  - name: import the public key
+    apt_key: 
+      url: https://www.mongodb.org/static/pgp/server-3.2.asc
+      state: present
+  - name: add mongoDB repository
+    apt_repository: 
+      repo: 'deb http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.2 multiverse'
+      state: present
+  - name: install mongodb
+    apt: 
+      name: mongodb
+      update_cache: yes
+      state: present
+  - name: start mongodb
+    systemd:
+      name: mongodb
+      state: started
+      enabled: yes
